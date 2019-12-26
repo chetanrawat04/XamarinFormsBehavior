@@ -1,0 +1,13 @@
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\bin\Debug\netstandard2.0\XamarinFormsBehavior.deps.json
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\bin\Debug\netstandard2.0\XamarinFormsBehavior.dll
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\bin\Debug\netstandard2.0\XamarinFormsBehavior.pdb
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\obj\Debug\netstandard2.0\Views\SignUp.xaml.g.cs
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\obj\Debug\netstandard2.0\XamarinFormsBehavior.csproj.CoreCompileInputs.cache
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\obj\Debug\netstandard2.0\XamarinFormsBehavior.AssemblyInfoInputs.cache
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\obj\Debug\netstandard2.0\XamarinFormsBehavior.AssemblyInfo.cs
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\obj\Debug\netstandard2.0\XamarinFormsBehavior.dll
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\obj\Debug\netstandard2.0\XamarinFormsBehavior.pdb
+C:\Demo\XamarinFormsBehavior\XamarinFormsBehavior\XamarinFormsBehavior\obj\Debug\netstandard2.0\XamarinFormsBehavior.csprojAssemblyReference.cache

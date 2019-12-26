@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamarinFormsBehavior.Views.SignUp"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:XamarinFormsBehavior.Behaviors"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    BackgroundImageSource="Bg.png">
+    <ContentPage.Content>
+        <ScrollView
+            HorizontalOptions="FillAndExpand"
+            HorizontalScrollBarVisibility="Never"
+            VerticalOptions="FillAndExpand"
+            VerticalScrollBarVisibility="Never">
+            <Grid
+                Padding="40,0,40,0"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*" />
+                    <RowDefinition Height="7*" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+
+                <pancake:PancakeView
+                    Grid.Row="1"
+                    Grid.RowSpan="3"
+                    Padding="0,50,0,0"
+                    BackgroundColor="White"
+                    CornerRadius="40,40,0,0"
+                    HorizontalOptions="FillAndExpand"
+                    IsClippedToBounds="true"
+                    VerticalOptions="FillAndExpand">
+                    <StackLayout
+                        Padding="30,0"
+                        HorizontalOptions="FillAndExpand"
+                        Spacing="20"
+                        VerticalOptions="FillAndExpand">
+                        <Label
+                            Margin="15,16,0,-16"
+                            HorizontalOptions="FillAndExpand"
+                            Text="Email Id"
+                            VerticalOptions="Fill" />
+                        <pancake:PancakeView
+                            Padding="15,2"
+                            BackgroundColor="#fafafa"
+                            BorderColor="#57b5bb"
+                            BorderThickness=".5"
+                            CornerRadius="20"
+                            HeightRequest="50"
+                            HorizontalOptions="FillAndExpand"
+                            IsClippedToBounds="true">
+                            <pancake:PancakeView.Triggers>
+                                <DataTrigger
+                                    Binding="{Binding Source={x:Reference emailValidator}, Path=IsFocus}"
+                                    TargetType="pancake:PancakeView"
+                                    Value="False">
+                                    <Setter Property="BorderColor" Value="#57b5bb" />
+                                </DataTrigger>
+                                <DataTrigger
+                                    Binding="{Binding Source={x:Reference emailValidator}, Path=IsFocus}"
+                                    TargetType="pancake:PancakeView"
+                                    Value="True">
+                                    <Setter Property="BorderColor" Value="Red" />
+                                </DataTrigger>
+                            </pancake:PancakeView.Triggers>
+                            <Entry
+                                HorizontalOptions="FillAndExpand"
+                                Placeholder="Email"
+                                VerticalOptions="Center">
+                                <Entry.Behaviors>
+                                    <local:EmailValidatorBehavior x:Name="emailValidator" />
+                                </Entry.Behaviors>
+                            </Entry>
+                        </pancake:PancakeView>
+                        <Label
+                            Margin="15,16,0,-16"
+                            HorizontalOptions="FillAndExpand"
+                            Text="Age"
+                            VerticalOptions="Fill" />
+                        <pancake:PancakeView
+                            Padding="15,2"
+                            BackgroundColor="#fafafa"
+                            BorderColor="#57b5bb"
+                            BorderThickness=".5"
+                            CornerRadius="20"
+                            HeightRequest="50"
+                            HorizontalOptions="FillAndExpand"
+                            IsClippedToBounds="true">
+                            <pancake:PancakeView.Triggers>
+                                <DataTrigger
+                                    Binding="{Binding Source={x:Reference ageValidator}, Path=IsFocus}"
+                                    TargetType="pancake:PancakeView"
+                                    Value="False">
+                                    <Setter Property="BorderColor" Value="#57b5bb" />
+                                </DataTrigger>
+                                <DataTrigger
+                                    Binding="{Binding Source={x:Reference ageValidator}, Path=IsFocus}"
+                                    TargetType="pancake:PancakeView"
+                                    Value="True">
+                                    <Setter Property="BorderColor" Value="Red" />
+                                </DataTrigger>
+                            </pancake:PancakeView.Triggers>
+                            <Entry
+                                HorizontalOptions="FillAndExpand"
+                                Keyboard="Telephone"
+                                Placeholder="Age"
+                                VerticalOptions="Center">
+                                <Entry.Behaviors>
+                                    <local:AgeValidatorBehavior x:Name="ageValidator" />
+                                </Entry.Behaviors>
+                            </Entry>
+                        </pancake:PancakeView>
+
+                        <Label
+                            Margin="15,16,0,-16"
+                            HorizontalOptions="FillAndExpand"
+                            Text="Mobile"
+                            VerticalOptions="Fill" />
+                        <pancake:PancakeView
+                            Padding="15,2"
+                            BackgroundColor="#fafafa"
+                            BorderColor="#57b5bb"
+                            BorderThickness=".5"
+                            CornerRadius="20"
+                            HeightRequest="50"
+                            HorizontalOptions="FillAndExpand"
+                            IsClippedToBounds="true">
+                            <pancake:PancakeView.Triggers>
+                                <DataTrigger
+                                    Binding="{Binding Source={x:Reference mobileValidator}, Path=IsFocus}"
+                                    TargetType="pancake:PancakeView"
+                                    Value="False">
+                                    <Setter Property="BorderColor" Value="#57b5bb" />
+                                </DataTrigger>
+                                <DataTrigger
+                                    Binding="{Binding Source={x:Reference mobileValidator}, Path=IsFocus}"
+                                    TargetType="pancake:PancakeView"
+                                    Value="True">
+                                    <Setter Property="BorderColor" Value="Red" />
+                                </DataTrigger>
+                            </pancake:PancakeView.Triggers>
+                            <Entry
+                                HorizontalOptions="FillAndExpand"
+                                MaxLength="10"
+                                Placeholder="Mobile"
+                                VerticalOptions="Center">
+                                <Entry.Behaviors>
+                                    <local:MobileValidatorBehavior x:Name="mobileValidator" />
+                                </Entry.Behaviors>
+                            </Entry>
+                        </pancake:PancakeView>
+                    </StackLayout>
+                </pancake:PancakeView>
+
+                <pancake:PancakeView
+                    Grid.Row="2"
+                    Grid.RowSpan="3"
+                    Margin="30,0,30,0"
+                    Padding="15,2"
+                    BackgroundColor="#fafafa"
+                    BackgroundGradientAngle="180"
+                    BackgroundGradientEndColor="#6ebfbe"
+                    BackgroundGradientStartColor="#47abbd"
+                    BorderColor="#57b5bb"
+                    BorderThickness=".5"
+                    CornerRadius="20"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand"
+                    IsClippedToBounds="true"
+                    VerticalOptions="Center">
+                    <Label
+                        HorizontalOptions="FillAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Text="SignUp"
+                        VerticalOptions="Center" />
+                </pancake:PancakeView>
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
